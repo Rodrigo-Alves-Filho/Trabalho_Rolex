@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório de Perfil de Dados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Relatório de Perfil de Dados</h1>
+  <button onclick="abrirRelatorio()">Abrir Relatório</button>
+  <div id="relatorio" style="margin-top: 20px; display: none;">
+    <iframe src="profile_report.html"></iframe>
+  </div>
+
+  <script>
+    function abrirRelatorio() {
+      document.getElementById('relatorio').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
